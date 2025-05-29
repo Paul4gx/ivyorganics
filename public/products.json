@@ -1,0 +1,180 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Carrot Extract Oil (100ml)",
+      "price": 10.00,
+      "tagline":"Glow Like Nature Intended",
+      "description": "Unlock the secret to radiant, youthful skin with our Carrot Extract Oil—a deeply nourishing elixir made from sun-ripened carrots, delicately infused with rose petals and blended with the healing powers of coconut oil, rosehip, and geranium essential oil. Its vibrant orange-gold hue is nature’s promise of purity, packed with beta-carotene, antioxidants, and vitamins that deliver visible results. The subtle floral aroma from rose and geranium calms your senses as it works to heal and protect your skin barrier.",
+      "features":[
+        "Brighten dull and uneven skin tone", 
+        "Fade scars, blemishes, and hyperpigmentation", 
+        "Boost collagen production for firmer, plumper skin", 
+        "Soothe inflammation and dry patches"
+      ],
+      "image": "images/Carrot-Extract-Oil.jpg",
+      "texture": "Oil",
+      "color": "Rich orange-gold",
+      "scent": "Infused with real rose petals",
+      "size": "100ml amber glass bottle to protect its potency",
+      "category": "body-care",
+      "ingredients": "Organic coconut oil, organic lavender essential oil, vitamin E",
+      "Perfect_for": "All skin types, especially dull, scarred, or dry skin"
+    },
+    {
+      "id": 2,
+      "name": "Goat Milk Shea Body Butter (250g)",
+      "price": 10.00,
+      "tagline":"Feed Your Skin Like Royalty",
+      "description": "Craving baby-soft skin that smells like a warm hug? Meet our Goat Milk Shea Body Butter—a decadently rich, creamy blend that melts into your skin like butter on warm bread. Made with deeply nourishing goat milk, skin-loving coconut oil, glycerin, cocoa butter, beeswax, and shea butter, this powerhouse formula hydrates, heals, and protects all day long.",
+      "features":[
+        "Ultra-moisturizing: Locks in hydration and repairs dry, cracked skin",
+        "Nutrient-rich: Goat milk delivers vitamins A, B6, and lactic acid for soft, glowing skin",
+        "Protective barrier: Beeswax seals in moisture without clogging pores",
+        "Smells heavenly: Like cookies and warm butter—comforting and nostalgic",
+        "Gentle enough for sensitive or irritated skin types"
+      ],
+      "image": "images/Shea-Butter-Cream-Butter.jpg",
+      "texture": "Creamy, whipped, and buttery",
+      "color": "Natural cream",
+      "scent": "Buttery, sweet, dessert-like",
+      "size": "250g wide jar",
+      "category": "body-care",
+      "ingredients": "Organic aloe vera, biotin, rosemary extract, coconut surfactants",
+      "Perfect_for": "A skin treat that feels like dessert"
+    },
+    {
+      "id": 3,
+      "name": "Shea Butter Cream (250ml)",
+      "price": 10.00,
+      "tagline":"Deep Repair. Divine Scent. Lasting Glow.",
+      "description": "Indulge your skin in a buttery-soft experience with our Shea Butter Cream, a luxurious blend of nature’s richest moisturizers and ancient oils. Crafted with unrefined shea butter, cocoa butter, vitamin E, and the sacred essences of frankincense and patchouli, this cream is more than hydration—it’s healing in a jar.",
+      "features":[
+        "Repairs dry, cracked, or irritated skin",
+        "Softens rough patches and evens out skin tone",
+        "Delivers anti-aging nourishment to reduce fine lines",
+        "Creates a long-lasting protective barrier",
+        "Leaves behind a grounding, earthy aroma that lingers gently"
+      ],
+      "image": "images/Shea-Butter-Cream-Lotion.jpg",
+      "texture":"Rich and creamy",
+      "color": "Creamy ivory",
+      "scent": "Divine Scent",
+      "size": "250ml wide jar",
+      "category": "body-care",
+      "ingredients": "Bentonite clay, activated charcoal, organic green tea extract",
+      "Perfect_for": "Dry to very dry skin, sensitive skin, and ritual self-care moments"
+    },
+    {
+      "id": 4,
+      "name": "Shea Hair Butter Mix - Combo",
+      "price": 29.99,
+      "tagline":"Glow Like Nature Intended",
+      "description": "Exfoliating body scrub with organic citrus oils and sugar crystals for glowing skin.",
+      "image": "images/Shea-Hair-Butter-Mix-Combo.jpg",
+      "category": "hair-care",
+      "ingredients": "Organic sugar, sweet almond oil, orange essential oil, lemon peel",
+      "size": "200g"
+    },
+    {
+      "id": 5,
+      "name": "Shea Hair Butter Mix Conditioner (250g)",
+      "price": 10.00,
+      "tagline":"Softens. Strengthens. Stimulates.",
+      "description": "Say goodbye to dry, frizzy hair and hello to soft, defined, and healthy strands with our Shea Hair Butter Mix—a nutrient-rich, leave-in conditioner designed to hydrate, strengthen, and protect your hair from root to tip. Infused with Aloe Vera, Shea Butter, and luxurious Mango Butter, this creamy, lightweight formula penetrates the hair shaft to deliver lasting moisture while smoothing cuticles and promoting shine.",
+      "features":[
+        "Deeply moisturizes without weighing down hair",
+        "BTMS (plant-derived emulsifier) makes detangling a breeze",
+        "Peppermint & Tea Tree oils stimulate the scalp and reduce itchiness",
+        "Vitamin B3 helps repair damaged strands and boost elasticity",
+        "Perfect for natural, relaxed, or protective styles"
+      ],
+      "image": "images/Shea-Hair-Butter-Mix-Conditioner.jpg",
+      "texture":"Rich and creamy, yet non-greasy",
+      "color": "Silky white",
+      "scent": "Fresh and minty with herbal undertones",
+      "size": "250g jar",
+      "category": "hair-care",
+      "ingredients": "Organic chamomile, organic peppermint, organic lavender",
+      "Perfect_for": "daily moisturizer, curl refresher, or post-wash treatment. Your hair will drink it up—and thank you with softness, strength, and shine."
+    },
+    {
+      "id": 6,
+      "name": "Shea Hair Butter Mix Shampoo (250ml)",
+      "price": 10.00,
+      "tagline":"Cleanse. Strengthen. Nourish. Naturally.",
+      "description": "Finally, a shampoo that does more than just clean—it feeds your scalp, strengthens your roots, and leaves your hair feeling luxuriously soft from the very first wash. Our Shea Hair Butter Mix Shampoo is a creamy herbal cleanser crafted with a potent blend of African Black Soap, Honey, Aloe Vera, Fenugreek, Cloves, Rosemary, and nourishing Shea Butter.",
+      "features":[
+        "Cleanse your scalp without stripping natural oils",
+        "Reduce shedding and dandruff with rosemary & cloves",
+        "Hydrate and soften hair with aloe, honey, and shea",
+        "Boost hair growth from root to tip with fenugreek and herbs",
+        "Leave your strands stronger, shinier, and healthier after every use"
+      ],
+      "image": "images/Shea-Hair-Butter-Mix-Shampoo.jpg",
+      "texture": "Lightly creamy with a gentle, foamy lather",
+      "color": "Earthy brown (from black soap and herbs)",
+      "scent": "Herbal-fresh with sweet undertones",
+      "size": "250ml pump bottle for easy, mess-free use",
+      "category": "hair-care",
+      "ingredients": "Coconut oil, shea butter, arrowroot powder, essential oils",
+      "Perfect_for":"all hair types, including natural, relaxed, and protective styles. Gentle enough for kids too!"
+    },
+    {
+      "id": 7,
+      "name": "Shea Hair Butter Mix (500g)",
+      "price": 15.00,
+      "tagline":"Thicker Hair. Stronger Roots. Nature’s Touch.",
+      "description": "Experience the full power of African herbs and butters in one indulgent jar. Our Shea Hair Butter Mix is a rich, restorative formula made to nourish, protect, and strengthen even the most delicate strands. Infused with potent botanicals like Chebe, Neem, Moringa, and Rosemary, this hair butter revives dry hair, boosts growth, and seals in moisture for days. Blended with Shea Butter, Cocoa Butter, and enriched with Vitamin E, Tea Tree, and Peppermint Oils, it feeds your scalp and hair the nutrients they’ve been craving.",
+      "features":[
+        "Strengthens hair strands and reduces breakage",
+        "Promotes healthy hair growth with Ayurvedic and African herbs",
+        "Softens dry, brittle hair and restores elasticity",
+        "Stimulates the scalp and reduces dandruff and itchiness",
+        "Locks in moisture and adds shine without greasiness"
+      ],
+      "image": "images/SheaHairButterMix(500g).jpg",
+      "texture": "Thick, smooth butter that melts into your hair",
+      "color": "Natural creamy beige",
+      "scent": "Herbal-fresh with a cooling peppermint finish",
+      "size": "500g large jar for long-term use",
+      "category": "hair-care",
+      "ingredients": "Organic sugar, sweet almond oil, orange essential oil, lemon peel",
+      "Perfect_for": "sealing in moisture after wash day or daily use for twist-outs, braids, and protective styles."
+    },    
+    {
+      "id": 8,
+      "name": "NMA Herbal Black Soap",
+      "price": 15.00,
+      "tagline":"Deep Cleanse. Radiant Glow. Rooted in Nature.",
+      "description": "Introducing ‘NMA’—a traditional African black soap, reimagined with a healing herbal twist. This isn’t just soap—it’s a skin-cleansing ritual in a jar, handcrafted with a luxurious blend of Goat milk, raw honey, vitamin E, and botanical heavyweights like turmeric, licorice, neem, moringa, coconut oil, and sandalwood. Each scoop works like a detox for your skin, drawing out impurities while feeding it deep moisture and nutrients.",
+      "features":[
+        "Gently fades dark spots, scars, and hyperpigmentation",
+        "Soothes acne, rashes, and inflammation without drying out the skin",
+        "Rich in antioxidants to fight premature aging",
+        "Goat milk and honey deeply hydrate and soften",
+        "Natural oils leave your skin supple—not stripped"
+      ],
+      "image": "images/nma.jpg",
+      "texture": "Thick, pasty black/brown blend that lathers richly",
+      "color": "Earthy black with golden tones",
+      "scent": "Herbal, grounding, and mildly sweet",
+      "size": "500g jar — lasts for months!",
+      "category": "body-care",
+      "ingredients": "Organic sugar, sweet almond oil, orange essential oil, lemon peel",
+      "Perfect_for": "both face and body"
+    },
+        {
+      "id": 9,
+      "name": "Complete Care Package",
+      "price": 59.99,
+      "tagline":"Glow Like Nature Intended",
+      "description": "Exfoliating body scrub with organic citrus oils and sugar crystals for glowing skin.",
+      "image": "images/fullpackage.jpg",
+      "category": "full-package",
+      "ingredients": "Organic sugar, sweet almond oil, orange essential oil, lemon peel",
+      "size": "200g"
+    }
+    
+  ]
+}
