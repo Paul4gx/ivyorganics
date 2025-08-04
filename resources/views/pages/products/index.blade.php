@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.main')
 
 @section('title', 'Products')
 
@@ -40,14 +40,14 @@
             @foreach($products as $product)
                 <div class="product-card bg-white rounded-lg shadow-md overflow-hidden" data-category="{{ $product['category'] }}">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="{{ asset($product['image']) }}" alt="{{ $product['name'] }}" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        <img src="{{ asset('storage/'.$product['image']) }}" alt="{{ $product['name'] }}" class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         <div class="absolute top-2 right-2 bg-green-700 text-white text-xs font-semibold px-2 py-1 rounded-full">Organic</div>
                     </div>
                     <div class="p-4">
                         <h3 class="font-semibold text-lg mb-1 font-playfair"><a href="{{ route('products.show', $product['id']) }}" class="text-green-700 hover:text-green-800">{{ $product['name'] }}</a></h3>
                         <p class="text-gray-600 text-sm mb-3">{{ Str::limit($product['description'], 60) }}</p>
                         <div class="flex justify-between items-center">
-                            <span class="font-semibold text-green-700">${{ number_format($product['price'], 2) }}</span>
+                            <span class="font-semibold text-green-700">{{ format_currency($product['price']) }}</span>
                             <a href="{{ route('products.show', $product['id']) }}" class="text-green-700 hover:text-green-800 font-medium">View Product</a>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.main')
 
 @section('title', 'Your Cart')
 
@@ -12,15 +12,15 @@
                 @foreach($products as $product)
                     <div class="p-6 flex flex-col md:flex-row items-center">
                         <div class="w-full md:w-1/4 mb-4 md:mb-0">
-                            <img src="{{ asset($product['image']) }}" alt="{{ $product['name'] }}" class="w-full h-48 object-cover rounded">
+                            <img src="{{ asset('storage/'.$product['image']) }}" alt="{{ $product['name'] }}" class="w-full h-48 object-cover rounded">
                         </div>
                         <div class="w-full md:w-2/4 px-4">
                             <h3 class="font-semibold text-lg text-green-800 font-playfair"><a href="{{ route('products.show', $product['id']) }}" class="text-green-700 hover:text-green-800">{{ $product['name'] }}</a></h3>
                             <p class="text-gray-600 mt-1">{{ $product['size'] }}</p>
-                            {{-- <p class="text-gray-600 mt-1">{{ $product['ingredients'] }}</p> --}}
+                            <p class="text-gray-600 mt-1">{{ $product['tagline'] }}</p>
                         </div>
                         <div class="w-full md:w-1/4 mt-4 md:mt-0 flex flex-col items-end">
-                            <p class="font-semibold text-green-700">${{ number_format($product['price'], 2) }}</p>
+                            <p class="font-semibold text-green-700">{{ format_currency($product['price']) }}</p>
                             <div class="flex items-center mt-2">
                                                 <form action="{{ route('cart.update', $product['id']) }}" method="POST" class="flex items-center">
                     @csrf
@@ -58,8 +58,8 @@
                 <div class="flex justify-between items-center">
     <h3 class="text-lg font-semibold">Total</h3>
     <p class="text-xl font-semibold text-green-700">
-        ${{ number_format($products->sum(function($product) { return $product['price'] * $product['quantity']; }) + 5, 2) }}
-        <span class="text-sm font-normal text-gray-600">(includes $5.00 shipping)</span>
+        {{ format_currency($products->sum(function($product) { return $product['price'] * $product['quantity']; })) }}
+        {{-- <span class="text-sm font-normal text-gray-600">(includes $5.00 shipping)</span> --}}
     </p>
 </div>
                 

@@ -38,15 +38,15 @@
                 <ul class="space-y-2">
                     <li class="flex items-start">
                         <i class="fas fa-map-marker-alt mt-1 mr-2 text-green-300"></i>
-                        <span class="text-green-100">123 Green Street, Organic City</span>
+                        <span class="text-green-100">{{config('services.contact.address')}}</span>
                     </li>
                     <li class="flex items-start">
                         <i class="fas fa-phone-alt mt-1 mr-2 text-green-300"></i>
-                        <span class="text-green-100">+1 (555) 123-4567</span>
+                        <span class="text-green-100">{{config('services.contact.phone')}}</span>
                     </li>
                     <li class="flex items-start">
                         <i class="fas fa-envelope mt-1 mr-2 text-green-300"></i>
-                        <span class="text-green-100">hello@ivyorganics.com</span>
+                        <span class="text-green-100">{{config('services.contact.email')}}</span>
                     </li>
                 </ul>
             </div>

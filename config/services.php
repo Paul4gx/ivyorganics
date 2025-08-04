@@ -35,4 +35,16 @@ return [
         ],
     ],
 
+    'paystack' => [
+        'url' => env('PAYSTACK_URL', 'https://api.paystack.co'),
+        'secret_key' => env('PAYSTACK_SECRET_KEY'),
+        'public_key' => env('PAYSTACK_PUBLIC_KEY'),
+    ],
+    'contact' => [
+        'whatsapp' => env('WHATSAPP_NUMBER'),
+        'email' => env('ADMIN_EMAIL_ADDRESS'),
+        'phone' => env('PHONE_NUMBER'),
+        'address' => env('CONTACT_ADDRESS'),
+    ],
+
 ];

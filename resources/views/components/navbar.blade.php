@@ -6,6 +6,7 @@
                     <span class="text-2xl font-playfair text-green-700 font-bold">Ivy Organics</span>
                 </a>
             </div>
+
             <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
                 <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">Home</x-nav-link>
                 <x-nav-link href="{{ route('products.index') }}" :active="request()->routeIs('products.*')">Products</x-nav-link>
@@ -19,8 +20,21 @@
                         </span>
                     @endif
                 </x-nav-link>
+                
+                             <!-- Currency Selector -->
+            <x-currency-selector />               
             </div>
             <div class="-mr-2 flex items-center md:hidden">
+                            <!-- Currency Selector -->
+            <x-currency-selector />
+            <x-mobile-nav-link href="{{ route('cart') }}">
+                <i class="fas fa-shopping-cart mr-2"></i>
+                @if($cartCount > 0)
+                    <span class="ml-1 bg-green-700 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                        {{ $cartCount }}
+                    </span>
+                @endif
+            </x-mobile-nav-link>
                 <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-green-700 focus:outline-none" id="mobile-menu-button">
                     <span class="sr-only">Open main menu</span>
                     <i class="fas fa-bars"></i>

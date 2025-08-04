@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.main')
 
 @section('title', 'Home')
 
@@ -9,7 +9,7 @@
                 <div class="md:w-1/2 mb-10 md:mb-0">
                     <h1 class="text-4xl md:text-5xl font-playfair font-bold text-green-800 mb-6">Pure. Natural. Organic.</h1>
                     <p class="text-lg text-gray-600 mb-8">Discover our handcrafted organic beauty and wellness products made with love and the finest natural ingredients.</p>
-                    <a href="products.html" class="inline-block bg-green-700 hover:bg-green-800 text-white font-medium py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">Shop Now</a>
+                    <a href="{{route('products.index')}}" class="inline-block bg-green-700 hover:bg-green-800 text-white font-medium py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">Shop Now</a>
                 </div>
                 <div class="md:w-1/2 flex justify-center">
                     <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-white shadow-xl">
@@ -27,18 +27,19 @@
         </div>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {{-- @dd($featuredProducts) --}}
             @foreach($featuredProducts as $product)
                 <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="{{ asset($product['image']) }}" alt="{{ $product['name'] }}" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        <img src="{{ asset('storage/'.$product->image) }}" alt="{{ $product->name }}" class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         <div class="absolute top-2 right-2 bg-green-700 text-white text-xs font-semibold px-2 py-1 rounded-full">Organic</div>
                     </div>
                     <div class="p-4">
-                        <h3 class="font-semibold text-lg mb-1 font-playfair"><a href="{{ route('products.show', $product['id']) }}" class="text-green-700 hover:text-green-800">{{ $product['name'] }}</a></h3>
-                        <p class="text-gray-600 text-sm mb-3">{{ Str::limit($product['description'], 60) }}</p>
+                        <h3 class="font-semibold text-lg mb-1 font-playfair"><a href="{{ route('products.show', $product->id) }}" class="text-green-700 hover:text-green-800">{{ $product->name}}</a></h3>
+                        <p class="text-gray-600 text-sm mb-3">{{ Str::limit($product->tagline, 60) }}</p>
                         <div class="flex justify-between items-center">
-                            <span class="font-semibold text-green-700">${{ number_format($product['price'], 2) }}</span>
-                            <a href="{{ route('products.show', $product['id']) }}" class="text-green-700 hover:text-green-800 font-medium">View Product</a>
+                            <span class="font-semibold text-green-700">{{ format_currency($product->price) }}</span>
+                            <a href="{{ route('products.show', $product->id) }}" class="text-green-700 hover:text-green-800 font-medium">View Product</a>
                         </div>
                     </div>
                 </div>
